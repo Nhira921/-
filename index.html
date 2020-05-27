@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>sleep time checker</title>
+        <link rel="stylesheet" href="css/stylesheet.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Sawarabi+Gothic&family=Sawarabi+Mincho&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="title">
+                <h1>ようこそ適正起床時間チェッカーへ</h1>
+                <h2>
+                    あなたに最適な起床時間を教えてあげます
+                </h2>
+            </div>
+            <div class="q-container">
+                <h5>①年齢を選択して下さい</h5>
+                <form name="age-form">
+                    <select id="ageSelect">
+                        <option>------</option>
+                        <option value="10">0～10歳</option>
+                        <option value="15">11～15歳</option>
+                        <option value="25">16～25歳</option>
+                        <option value="45">26～45歳</option>
+                        <option value="65">46～65歳</option>
+                        <option value="75">75歳以上 </option>
+                    </select>
+                </form>
+                <h5>
+                    ②今から寝るボタンを押すと現在時刻を取得します。
+                </h5>
+                <p id="currentTime">00:00.000</p>
+                <div class="btn">
+                    <button type="button" class="btn btn-light" id="btnGetTime">
+                        今から寝る
+                    </button>
+                    <button type="button" class="btn btn-light">
+                        <a href="index.html">
+                            リセット
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="p-3 mb-2 bg-secondary text-white advice-container">
+                <h5>あなたへのアドバイス</h5>
+                <p id="advice"></p>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
